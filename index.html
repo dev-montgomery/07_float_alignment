@@ -3,9 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Floats and Alignment</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+    }
+    section {
+      background: #f4f4f4;
+      border: 1px solid #333;
+      padding: .8em 2em;
+      margin-bottom:1em;
+    }
+    #box-1 {
+
+    }
+    #box-2 {
+      text-align: center;
+      float: left;
+      width: 68%;
+    }
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+    .clear {
+      clear: both;
+    }
+  </style>
 </head>
 <body>
-  
+  <main class="container">
+    <section id="box-1">
+      <h3>About Using Floats</h3>
+      <p>Floats have become somewhat antiquated with the introduction of flexbox and grid. The point of this assignment is just to learn about floats.</p>
+    </section>
+    <section id="box-2">
+      <h3>More About Floats</h3>
+      <p>When you use floats, you'll have to consider how css such as padding affects using values like percentages. To get around that complication, you can add a box-sizing attribute of border-box to the body or to all using an asterisk.</p>
+    </section>
+    <section id="box-3">
+      <h3>Another Thing About Using Floats</h3>
+      <p>When using floats, you have to consider how elements can consequently overlap. You end up needing to clear your floats using an element in the right placement on your page styled with a "clear: both" attribute.</p>
+    </section>
+
+    <div class="clear"></div>
+
+    <section id="box-4">
+      <h3>Last Thing About Floats</h3>
+      <p>They suck. Maybe that's an oversimplified statement, but honestly, they suck. Responsive design is critical, and floats are just a very inelegant solution.</p>
+    </section>
+  </main>
 </body>
 </html>
